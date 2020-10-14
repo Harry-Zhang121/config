@@ -1,6 +1,6 @@
 import os
 import subprocess
-import iwlib
+import iwlib # Required by widget.Wlan
 from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.lazy import lazy
 from libqtile import layout, bar, widget, hook
@@ -49,7 +49,11 @@ keys = [
     Key([mod], "c", lazy.spawn("firefox")),
     Key([mod], "v", lazy.spawn("code")),
     Key([mod], "d", lazy.spawn("rofi -show run")),
-    Key([mod, "shift"], "d", lazy.spawn("demnu_run"))
+    Key([mod, "shift"], "d", lazy.spawn("demnu_run")),
+
+    # Brightness control
+    Key([mod], "XF86MonBrightnessUp", lazy.spawn("xbacklight +10")),
+    Key([mod], "XF86MonBrightnessDown", lazy.spawn("xbacklight -10")),
     
 ]
 
