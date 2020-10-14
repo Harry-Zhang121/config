@@ -49,6 +49,7 @@ keys = [
     Key([mod], "c", lazy.spawn("firefox")),
     Key([mod], "v", lazy.spawn("code")),
     Key([mod], "d", lazy.spawn("rofi -show run")),
+    Key([mod, "shift"], "d", lazy.spawn("demnu_run"))
     
 ]
 
@@ -103,13 +104,15 @@ screens = [
                 #widget.CurrentLayout(),
                 widget.GroupBox(this_current_screen_border = '#e6837b', fontsize = 20, hide_unused = True, rounded = False),
                 widget.Spacer(),
-                widget.Clock(fontsize = 21,format='📅 %m-%d %a 🕒 %I:%M %p', padding = 3),
+                widget.Clock(fontsize = 21,format='%m-%d %a  %I:%M %p', padding = 3),
+                widget.Spacer(),
+                widget.Notify(fontsize = 22, default_timeout = 2),
                 widget.Battery(fontsize = 20, format = '{char} {percent:2.0%} ', charge_char = '🔌', discharge_char = '🔋', empty_char = '🈚', full_char = '🈵', padding = 3),
-                widget.Wlan(fontsize = 20, interface = 'wlp1s0', format = '📡 {essid}', padding = 3),
+                widget.Wlan(fontsize = 20, interface = 'wlan0', format = '{essid}', padding = 3),
                 widget.Systray(icon_size = 25, padding = 5),
             ],
             35,
-            background = ['#7a3344', '#23586e'],
+            background = ['#7a3344'],
             # background = '#23586e.1',(was trying to get a transparent bacckground)
             margin = [0,0,0,0],
             opacity = 0.8,
