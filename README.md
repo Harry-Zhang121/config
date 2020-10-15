@@ -9,7 +9,7 @@ All the config files
 
 #### Network control:
 - NetworkManager
-- Neyworkmanager-dmenu (run on rofi)
+- Networkmanager-dmenu (run on rofi)
 
 #### Backlight:
 - xbacklight
