@@ -54,6 +54,11 @@ keys = [
     # Brightness control
     Key([mod], "XF86MonBrightnessUp", lazy.spawn("xbacklight +10")),
     Key([mod], "XF86MonBrightnessDown", lazy.spawn("xbacklight -10")),
+
+    # Volume control
+    Key([mod], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+")),
+    Key([mod], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%-")),
+    Key([mod], "XF86AudioMute", lazy.spawn("pactl set-sink-mute 0 toggle")),
     
 ]
 

@@ -1,0 +1,35 @@
+# For the benefit of emacs users: -*- shell-script -*-
+###########################
+# xbindkeys configuration #
+###########################
+
+# execute xbindkeys --poll-rc to reload the configuration file #
+          ###################
+
+# Examples of commands:
+
+"xbindkeys_show" 
+  control+shift + q
+
+# Brightness control
+
+"xbacklight +10"
+  XF86MonBrightnessUp
+
+"xbacklight -10"
+  XF86MonBrightnessDown
+
+# Volume control
+
+"amixer set Master 5%+"
+  XF86AudioRaiseVolume
+
+"amixer set Master 5%-"
+  XF86AudioLowerVolume
+
+"pactl set-sink-mute 0 toggle"
+  XF86AudioMute
+
+##################################
+# End of xbindkeys configuration #
+##################################
