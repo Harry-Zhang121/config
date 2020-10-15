@@ -11,9 +11,16 @@ All the config files
 - NetworkManager
 - Neyworkmanager-dmenu (run on rofi)
 
-#### Backlight, multimedia, volume control:
+#### Backlight:
 - xbacklight
 - xbindkeys
+
+#### Volume:
+- alsa-utils
+- pactl (Because amixer is buged out on unmute.)
+
+#### Multimedia:
+todo
 
 #### Other utilities:
 - gtop
