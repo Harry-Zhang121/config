@@ -48,7 +48,7 @@ keys = [
     Key([mod], "Return", lazy.spawn("alacritty")),
     Key([mod], "c", lazy.spawn("firefox")),
     Key([mod], "v", lazy.spawn("code")),
-    Key([mod], "d", lazy.spawn("rofi -show run")),
+    Key([mod], "d", lazy.spawn("dmenu_run")),
     Key([mod, "shift"], "d", lazy.spawn("demnu_run")),
 
     # Brightness control
