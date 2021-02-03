@@ -12,7 +12,8 @@ All the config files
 - Networkmanager-dmenu (run on rofi)
 
 #### Backlight:
-- xbacklight
+- xbacklight (For intel platform/macbook)
+- backlight_control (For Readon platform)
 - xbindkeys
 
 #### Volume:
