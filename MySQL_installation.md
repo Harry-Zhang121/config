@@ -9,7 +9,7 @@ The answer is not using Microsoft SQL server. There are a lot more relational da
     2. [Debian based Linux](#Debian_based_Linux_41)
     3. [Arch based Linux](#Arch_based_Linux_61)
 3. [Configuration](#Configuration_89)
-4. [Graphical Interface](#GUI_tool_131)
+4. [Graphical Interface](#GUI%20tool)
 
 ## What are we installing 
 The database we are going to install is MariaDB. Which is forked from MySQL. It is developed my community to keep it free and open-source. It is fully compatible with MySQL. And don't worry, everything you learn from class will work here.
