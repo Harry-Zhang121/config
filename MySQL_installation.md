@@ -3,13 +3,13 @@
 
 The answer is not using Microsoft SQL server. There are a lot more relational databases you could use and they are **fully compatible** with SQL language we learn on Informatics2. So I am here writing a guide on installing one of them which runs natively on MacOS and Linux. ~~If you use freeBSD, salute and good luck.~~
 
-1. [What are we installing](##What_are_we_installing)
-2. [Installation](##Installation)
-    1. [MacOS](#macos)
-    2. [Debian based Linux](#Debian_bassed_Linux_73)
-    3. [Arch based Linux](#Arch)
-3. [Configuration](#Configuration)
-4. [Graphical Interface](#G)
+1. [What are we installing](#What_are_we_installing_13)
+2. [Installation](#Installation_16)
+    1. [MacOS](#MacOS_18)
+    2. [Debian based Linux](#Debian_based_Linux_41)
+    3. [Arch based Linux](#Arch_based_Linux_61)
+3. [Configuration](#Configuration_89)
+4. [Graphical Interface](#GUI_tool_131)
 
 ## What are we installing 
 The database we are going to install is MariaDB. Which is forked from MySQL. It is developed my community to keep it free and open-source. It is fully compatible with MySQL. And don't worry, everything you learn from class will work here.
@@ -35,7 +35,7 @@ Now you can use homebrew to install MariaDB. Simply type this and Return.
 brew install mariadb
 ```
 Wait until the prompt reappear and the installation is finished. Easy right?
-And now you can [jump to the configuration part.](#)
+And now you can [jump to the configuration part.](#Configuration_89)
 
 
 
@@ -57,7 +57,7 @@ Then install MariaDB
 ```
 sudo apt install mariadb-server
 ```
-You are done! And now you can [jump to the configuration part.](#)
+You are done! And now you can [jump to the configuration part.](#Configuration_89)
 
 ### Arch based Linux
 Archlinux, Manjaro, Arcolinux...These are based on Archlinux. So you should follow from here.
@@ -85,7 +85,7 @@ Now you can **Enable** MariaDB in systemd
 ```
 sudo systemctl enable --now mariadb.service
 ```
-You are done! And now you can [jump to the configuration part.](#)
+You are done! And now you can [jump to the configuration part.](#Configuration_89)
 
 ## Configuration
 From this step all commends will be identical for different platform.
