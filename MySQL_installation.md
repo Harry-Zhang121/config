@@ -25,7 +25,7 @@ To install homebrew. First open your terminal by searching "Terminal" in your La
 ``` 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
 ```
-It will ask for your password. __Nothing will appear when typing your password. Not even asterisk (*******).__ It is normal, don't panic. Type in your password as normal and hit Return.
+It will ask for your password. __Nothing will appear when typing your password. Not even asterisk (*******).__ It is normal, don't panic. Type in your password as normal and hit Return.  
 When you see the prompt reappear. Homebrew is installed successfully. You can test this by executing `brew --version` and the version number should appear on your terminal.
 
 Further questions regarding homebrew installation can refer to [Homebrew documentation.](https://docs.brew.sh/Installation)
@@ -34,7 +34,7 @@ Now you can use homebrew to install MariaDB. Simply type this and Return.
 ``` 
 brew install mariadb
 ```
-Wait until the prompt reappear and the installation is finished. Easy right?
+Wait until the prompt reappear and the installation is finished. Easy right?  
 And now you can [jump to the configuration part.](#configuration)
 
 
@@ -43,7 +43,7 @@ And now you can [jump to the configuration part.](#configuration)
 Debian, Ubuntu, LinuxMint, ElementryOS.... These are based on Debian. So you should follow from here.
 
 #### 0. Btrfs
-If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database. 
+If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database.  
 If you don't know what is Btrfs or what is a file system. You can probability skip this step.
 
 #### 1. MariaDB
@@ -63,7 +63,7 @@ You are done! And now you can [jump to the configuration part.](#configuration)
 Archlinux, Manjaro, Arcolinux...These are based on Archlinux. So you should follow from here.
 
 #### 0. Btrfs
-If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database. 
+If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database.   
 If you don't know what is Btrfs or what is a file system. You can probability skip this step.
 
 #### 1. MariaDB
@@ -94,8 +94,8 @@ From this step all commends will be identical for different platform.
 ```
 sudo mysql -u root -p
 ```
-If the output start with `[sudo]` you need to provide your system password. Then you will be asked for the database user password which is **blank** so just hit Enter/Return.
-If only `Enter password:` is displayed then just hit Enter/Return.
+If the output start with `[sudo]` you need to provide your system password. Then you will be asked for the database user password which is **blank** so just hit Enter/Return.   
+If only `Enter password:` is displayed then just hit Enter/Return.   
 You should see the prompt has changed. It should looks like this: `MariaDB [(none)]>`
 
 Execute these commands to configure your database. **Note that every line end with a semi-colon ;**
@@ -124,14 +124,14 @@ My terminal output:
 ![Config](https://i.ibb.co/v4NcbxH/Screenshot-2022-03-02-001905.png)
 
 ## Enjoy!
-Now you can log in the database without using sudo: `mysql -u spongebob -p`
-Switch to the database we just created: `use Info2`
-Maybe create a table: `create table employee(......)`
+Now you can log in the database without using sudo: `mysql -u spongebob -p`   
+Switch to the database we just created: `use Info2`   
+Maybe create a table: `create table employee(......)`   
 ![enjoy](https://i.ibb.co/1dBc12T/Screenshot-2022-03-02-010021.png)
 
 ## GUI tool
 I intended to cover the installation and configuration of a GUI tool in this guide as well. But because of limited time, I will update this guide later.
 
 ## License
-This work is licensed under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)
+This work is licensed under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)   
 Feel free to share and redistribute this work to help others.
