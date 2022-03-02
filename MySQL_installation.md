@@ -44,7 +44,7 @@ Debian, Ubuntu, LinuxMint, ElementryOS.... These are based on Debian. So you sho
 
 #### 0. Btrfs
 If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database.  
-If you don't know what is Btrfs or what is a file system. You can probability skip this step.
+If you don't know what is Btrfs or what is a file system. You can probably skip this step.
 
 #### 1. MariaDB
 First update your package index
@@ -64,7 +64,7 @@ Archlinux, Manjaro, Arcolinux...These are based on Archlinux. So you should foll
 
 #### 0. Btrfs
 If your system runs on [Btrfs](https://wiki.archlinux.org/title/Btrfs). You should consider disabling [Cpoy-on-Write](https://wiki.archlinux.org/title/Btrfs#Copy-on-Write_(CoW)) before creating any database.   
-If you don't know what is Btrfs or what is a file system. You can probability skip this step.
+If you don't know what is Btrfs or what is a file system. You can probably skip this step.
 
 #### 1. MariaDB
 First update your arch repository
